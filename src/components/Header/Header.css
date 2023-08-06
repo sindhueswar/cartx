@@ -1,0 +1,159 @@
+/* Header.css */
+.header-container {
+  height: 128px;
+  display: flex;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.cart-icon {
+  width: 45px;
+  height: 44px;
+  fill: #fe682f;
+}
+
+.cartx {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Gill Sans";
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  /* border-right: 1px solid #000; */
+}
+
+ul {
+  display: flex;
+  margin: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #000;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.nav-list li {
+  font-size: 18px;
+}
+
+/* Media Query for Medium and Small Devices */
+@media screen and (max-width: 768px) {
+  .border {
+    border: none;
+  }
+ 
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 128px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .show {
+    display:flex;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .menu-toggle svg {
+    display: block;
+  }
+ 
+
+  .show-menu .bar {
+    background-color: #fff;
+  }
+
+  /* Additional styles to show the menu icon in md and sd */
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle svg {
+    display: block;
+  }
+
+  .nav-list li {
+    text-align: center;
+  }
+  .cartx{
+    font-size: medium;
+  }
+  .cartxlogo{
+    width: 30%;
+    height: 30%;
+  }
+  .header-container{
+    height: 70px;
+    justify-content:space-between;
+  }
+  li{
+    margin: 2%;
+  }
+  .divider{
+  display: none;}
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100%;
+    width: 100%;
+    padding: 20%;
+  }
+  nav{
+    margin: 250% -100% -100% -100%;
+    background-color: #FE682F; ;
+    overflow: hidden;
+    width:100%;
+  }
+}
+
+/* Show navigation links for larger devices */
+@media screen and (min-width: 769px) {
+  .nav-list {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+  .menu-item-name {
+    display: none;
+  }
+  .logo{
+    border-right: 1px solid #000;
+  }
+  .divider{
+    border-right: 1px solid #000;
+  }
+  
+  .li1{
+    margin: "15% 0 6% 45%";
+  }
+}
+
