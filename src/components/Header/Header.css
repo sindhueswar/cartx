@@ -14,8 +14,8 @@
 
 .cartx {
   font-size: 24px;
-  font-weight:900;
-  font-family: "Lemon Milk";
+  font-weight:bolder;
+  font-family: "LEMON MILK";
 }
 
 .menu {
@@ -162,8 +162,7 @@ ul {
     margin: 150% 0% 0% 0%;
   }
 }
-@media screen and (max-width: 
-px) {
+@media screen and (max-width: 769px) {
   menu{
     margin: 100%;
   }
@@ -173,8 +172,7 @@ px) {
   }
 }
 /* Show navigation links for larger devices */
-@media screen and (min-width: 
-px) {
+@media screen and (min-width: 769px) {
   .nav-list {
     display: flex;
   }
@@ -209,4 +207,7 @@ px) {
     margin: 15% 0 6% 45%;
   }
  
+}
+a{
+  font-family: 'Nunito Sans';
 }

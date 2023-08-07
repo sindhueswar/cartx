@@ -1,6 +1,7 @@
 import React,{useEffect}from "react";
 import Header from "../../components/Header/Header";
 import "./Home.css";
+// import { GoogleFontLoader } from 'react-google-font-loader';
 import WebFont from 'webfontloader';
 import image1 from "./../../components/images/wristwatch.png";
 import image2 from "./../../components/images/watch2.png";
@@ -8,7 +9,7 @@ function Home() {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Droid Sans', 'Chilanka']
+        families: ['Nunito Sans:400,700']
       }
     });
    }, []);
@@ -19,11 +20,11 @@ function Home() {
         <div className="border-line w-full "></div>
         <div className="left-margin right-margin ml-6 mr-6 md:ml-32   ">
           <div className=" ml-4 md:ml-10 " style={{ overflow: "visible" }}>
-            <div className="flex-nowrap">
+            <div className="flex-nowrap ">
               <div className="text-svg md:flex">
                 <div className="headtext">
                   <div className="flex md:m-4">
-                    <p className="nextgen  md:mt-16 md:ml-12">NEXT GEN </p>
+                    <p className="nextgen  md:mt-14 md:ml-12">NEXT GEN </p>
                     <svg
                       width="116"
                       height="115"
@@ -38,13 +39,13 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className="nextgen  sw md:ml-12 "> SMART WATCH</p>
+                  <p className="nextgen  sw md:ml-16 "> SMART WATCH</p>
 
                   <div className="desc1 md:m-2 ">
                     Everyone looks your watch and it represents who you are your
                     values and your personal style.
                   </div>
-                  <div className=" flex mr-20 mt-10 justify-between">
+                  <div className=" flex md:ml-2 mr-20 mt-9 justify-between">
                     <div className="price">$550.00</div>
                     <svg
                       className="flex pricesvg"
@@ -64,12 +65,12 @@ function Home() {
                   </div>
                 </div>
                 <div className="border-line2  mb-0"></div>
-                <img className="watch1  " src={image1} alt="My Image" />
+                <img className="watch1 " src={image1} alt="My Image" />
                 <div className="border-line2-1  mb-0"></div>
               </div>
             </div>
             
-            <div className="flex shopnowsvg mt-7 ">
+            <div className="flex shopnowsvg mt-7 ml-4">
               <div className="shopnow">
                 <svg
                   width="169.508px"

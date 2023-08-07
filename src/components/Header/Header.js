@@ -8,7 +8,6 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(window.innerWidth >= 769);
   const screen = window.innerWidth >= 769;
   var li1;
-  console.log("Screen----------------------->",screen)
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
@@ -96,10 +95,8 @@ function Header() {
                       >
                         Support
                       </Link>
-                     
                     </li>
-                    
-                    <li style={screen?{ margin: "15% 40% 6% 35%" }:{margin:"2% 5%"}}>
+                    <li style={screen?{ margin: "15% 55% 6% 35%" }:{margin:"2% 5%"}}>
                       <Link
                         to="/product"
                         className="block py-2 pl-3 pr-4 md:bg-transparent md:p-0 "
