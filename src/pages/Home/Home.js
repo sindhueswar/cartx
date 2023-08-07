@@ -1,10 +1,17 @@
-import React from "react";
+import React,{useEffect}from "react";
 import Header from "../../components/Header/Header";
 import "./Home.css";
-// import "./../.././..src/fonts.css"
+import WebFont from 'webfontloader';
 import image1 from "./../../components/images/wristwatch.png";
 import image2 from "./../../components/images/watch2.png";
 function Home() {
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Droid Sans', 'Chilanka']
+      }
+    });
+   }, []);
   return (
     <div className="flex-nowrap body">
       <div>

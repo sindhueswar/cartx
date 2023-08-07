@@ -14,8 +14,8 @@
 
 .cartx {
   font-size: 24px;
-  font-weight: 600;
-  font-family: "Gill Sans";
+  font-weight:900;
+  font-family: "Lemon Milk";
 }
 
 .menu {
@@ -52,7 +52,7 @@ ul {
 }
 
 /* Media Query for Medium and Small Devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .border {
     border: none;
   }
@@ -149,7 +149,6 @@ ul {
     z-index: 3; /* Ensure the menu toggle icon is on top of the menu */
   }
 
-  
   .menu {
     position: relative;
     z-index: 1; 
@@ -163,7 +162,8 @@ ul {
     margin: 150% 0% 0% 0%;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 
+px) {
   menu{
     margin: 100%;
   }
@@ -173,7 +173,8 @@ ul {
   }
 }
 /* Show navigation links for larger devices */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 
+px) {
   .nav-list {
     display: flex;
   }
@@ -199,3 +200,13 @@ ul {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  /* ... (existing media query styles) ... */
+  .nav-list {
+    display: flex;
+  }
+  .li1 {
+    margin: 15% 0 6% 45%;
+  }
+ 
+}

@@ -1,12 +1,5 @@
 @font-face {
     font-family: 'LEMON MILK';
-    src: url('./components/fonts/lemon-milk/LEMONMILK-Bold.otf'),
-         url('./components/fonts/lemon-milk/LEMONMILK-BoldItalic.otf'),
-         url('./components/fonts/lemon-milk/LEMONMILK-Light.otf'),
-         url('./components/fonts/lemon-milk/LEMONMILK-Medium.otf'),
-         url('./components/fonts/lemon-milk/LEMONMILK-MediumItalic.otf'),
-         url('./components/fonts/lemon-milk/LEMONMILK-Regular.otf'),
-         url('./components/fonts/lemon-milk/LEMONMILK-RegularItalic.otf'),
-         url('./components/fonts/lemon-milk/LEMONMILK-LightItalic.otf');
+    src: url('./fonts/LemonMilk.otf'),
   }
   

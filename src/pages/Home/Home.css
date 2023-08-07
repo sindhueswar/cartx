@@ -17,8 +17,8 @@
 
 .nextgen {
   font-size: 30px;
-  font-weight: 600;
-  font-family: "Gill Sans";
+  font-weight:800;
+  font-family: "Lemon Milk";
   flex: none;
 }
 .desc1 {
@@ -35,7 +35,7 @@
 
 .price {
   color: #1a1a1a;
-  font-family: "Gill  Sans";
+  font-family: "Lemon Milk";
   font-weight: 900;
   font-size: 24px;
   font-style: normal;
@@ -97,7 +97,7 @@
   border: 1px solid #000;
   border-bottom: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .desc1 {
     margin: 5% -9% 0% 0%;
     padding-right: 0px;
@@ -204,7 +204,7 @@
     margin-left: -17px;
   }
   }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 780px) {
   .right-margin {
     position: relative;
     margin-left: 7.5rem;
@@ -245,3 +245,5 @@
 .shopnowbox {
   margin: -6% 0 0 -4%;
 }
+/* Shop Now */
+
