@@ -32,7 +32,7 @@ function Header() {
   // window.innerWidth >= 769?  li1 ={margin: "15% 0 6% 45%"}: " ";
   return (
     <div class="header-container">
-      <div className="logo ml-4 md:ml-32  ">
+      <div className="logo ml-6 md:ml-32  ">
         <svg
           width="45"
           height="44"
@@ -68,13 +68,14 @@ function Header() {
                   }`}
                   id="navbar-default"
                 >
-                  <ul className="font-medium  flex  p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                  <ul className="font-medium  flex   mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    
                     <li className="li1"
-                      style={screen?{margin: "15% 0 6% 45%"}:{margin:"2% 5%"}}
+                      style={screen?{margin: "15% 0 6% 55%"}:{margin:"2% 5%"}}
                      >
                       <Link
                         to="/"
-                        className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0"
+                        className="block py-2 pl-3 pr-4  md:bg-transparent md:p-0 menu-page"
                       >
                         Home
                       </Link>
@@ -82,23 +83,26 @@ function Header() {
                     <li style={{ margin: "15% 0 6% 25%" }}>
                       <Link
                         to="/about"
-                        className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0"
+                        className="block py-2 pl-3 pr-4  md:bg-transparent md:p-0 menu-page"
                       >
                         AboutUs
                       </Link>
+                 
                     </li>
                     <li style={{ margin: "15% 0 6% 25%" }}>
                       <Link
                         to="/support"
-                        className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0"
+                        className="block py-2 pl-3 pr-4  md:bg-transparent md:p-0 menu-page"
                       >
                         Support
                       </Link>
+                     
                     </li>
-                    <li style={screen?{ margin: "15% 40% 6% 25%" }:{margin:"2% 5%"}}>
+                    
+                    <li style={screen?{ margin: "15% 40% 6% 35%" }:{margin:"2% 5%"}}>
                       <Link
                         to="/product"
-                        className="block py-2 pl-3 pr-4 md:bg-transparent md:p-0"
+                        className="block py-2 pl-3 pr-4 md:bg-transparent md:p-0 "
                       >
                         Product
                       </Link>
@@ -108,7 +112,7 @@ function Header() {
                       style={{ height: "128px", marginLeft: "0" }}
                     ></div>
                     {/* <div className="flex justify-between icons"  style={{margin:"4%"}}> */}
-                    <li className="flex  " style={{ margin: "15%" }}>
+                    <li className="flex icon " style={{ margin: "15% 8%" }}>
                       <span className="menu-item-name">Search</span>
                       <svg
                         width="26"
@@ -134,8 +138,9 @@ function Header() {
                           stroke-linejoin="round"
                         />
                       </svg>
+                      <div className="border-line2  mb-0"></div>
                     </li>
-                    <li className="flex " style={{ margin: "15% 8%" }}>
+                    <li className="flex icon " style={{ margin: "15% 8%" }}>
                       <span className="menu-item-name">Favrouites </span>
                       <svg
                         width="26"
@@ -153,8 +158,9 @@ function Header() {
                           stroke-linejoin="round"
                         />
                       </svg>
+                      <div className="border-line2  mb-0"></div>
                     </li>
-                    <li className="flex ml-5" style={{ margin: "15% 8%" }}>
+                    <li className="flex ml-5 icon" style={{ margin: "15% 8%" }}>
                       <span className="menu-item-name">cart</span>
                       <svg
                         width="26"
@@ -206,12 +212,13 @@ function Header() {
           </div>
 
           <AiOutlineClose
-            className="menu-toggle w"
+            className="menu-toggle m-5 "
             onClick={handleMenuToggle}
             size={30}
           />
         </>
       ) : (
+        <div className="menusvg">
         <svg
           width="32"
           height="32"
@@ -233,6 +240,7 @@ function Header() {
             </clipPath>
           </defs>
         </svg>
+        </div>
       )}
     </div>
   );

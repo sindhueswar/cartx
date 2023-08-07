@@ -1,4 +1,3 @@
-/* Header.css */
 .header-container {
   height: 128px;
   display: flex;
@@ -15,15 +14,13 @@
 
 .cartx {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   font-family: "Gill Sans";
 }
 
 .menu {
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
-  /* border-right: 1px solid #000; */
 }
 
 ul {
@@ -83,13 +80,14 @@ ul {
   .menu-toggle svg {
     display: block;
   }
- 
+   .menusvg{
+    margin: 6%;
+   }
 
   .show-menu .bar {
     background-color: #fff;
   }
 
-  /* Additional styles to show the menu icon in md and sd */
   .menu-toggle {
     display: block;
   }
@@ -126,13 +124,54 @@ ul {
     padding: 20%;
   }
   nav{
-    margin: 250% -100% -100% -100%;
-    background-color: #FE682F; ;
+    margin: 270% 0% 0% 0%;
+    background-color: #FDF6EB; 
     overflow: hidden;
     width:100%;
+    padding:0 80%;
+
+    border:  2px solid #000;;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    background-color: #f9f9f9;
+    /* padding: 20px; */
+    position: absolute;
+    top: 128px;
+    left: 0;
+    width: 80%;
+    z-index: 2; /* Ensure the menu is on top of the home screen */
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 3; /* Ensure the menu toggle icon is on top of the menu */
+  }
+
+  
+  .menu {
+    position: relative;
+    z-index: 1; 
+    /* float: right;Ensure the menu items are on top of the home screen content */
+  }
+  .menu-page{
+    border-bottom: 1px solid black;
+  }
+  ul{
+    padding: 0%;
+    margin: 150% 0% 0% 0%;
   }
 }
-
+@media screen and (max-width: 769px) {
+  menu{
+    margin: 100%;
+  }
+  
+  .icon{
+    display:none;
+  }
+}
 /* Show navigation links for larger devices */
 @media screen and (min-width: 769px) {
   .nav-list {
@@ -154,6 +193,9 @@ ul {
   
   .li1{
     margin: "15% 0 6% 45%";
+  }
+  .border-line2{
+    display:none;
   }
 }
 
