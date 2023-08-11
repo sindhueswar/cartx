@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "../../components/Header/Header";
 import WebFont from "webfontloader";
-import image1 from "./../../components/images/wristwatch.png";
-import image2 from "./../../components/images/watch2.png";
+import image1 from "./../../assets/wristwatch.png";
+import image2 from "./../../assets/watch2.png";
 import "./Home.css";
 
 function Home() {
