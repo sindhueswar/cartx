@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
-// import "./../../../src/fonts.css";
 import "./Header.css";
 
 function Header() {
@@ -20,7 +19,6 @@ function Header() {
     const handleResize = () => {
       setMenuOpen(window.innerWidth >= 769);
     };
-
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -28,7 +26,7 @@ function Header() {
     };
   }, []);
  
-  // window.innerWidth >= 769?  li1 ={margin: "15% 0 6% 45%"}: " ";
+
   return (
     <div class="header-container">
       <div className="logo ml-6 md:ml-32  ">

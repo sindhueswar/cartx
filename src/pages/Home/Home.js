@@ -1,30 +1,31 @@
-import React,{useEffect}from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header/Header";
-import "./Home.css";
-// import { GoogleFontLoader } from 'react-google-font-loader';
-import WebFont from 'webfontloader';
+import WebFont from "webfontloader";
 import image1 from "./../../components/images/wristwatch.png";
 import image2 from "./../../components/images/watch2.png";
+import "./Home.css";
+
 function Home() {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Nunito Sans:400,700']
-      }
+        families: ["Nunito Sans:400,700"],
+      },
     });
-   }, []);
+  }, []);
+
   return (
     <div className="flex-nowrap body">
       <div>
         <Header />
         <div className="border-line w-full "></div>
-        <div className="left-margin right-margin ml-6 mr-6 md:ml-32   ">
-          <div className=" ml-4 md:ml-10 " style={{ overflow: "visible" }}>
-            <div className="flex-nowrap ">
+        <div className="left-margin right-margin ml-6 mr-6 md:ml-32">
+          <div className="ml-4 md:ml-10 overflow-visible">
+            <div className="flex-nowrap">
               <div className="text-svg md:flex">
                 <div className="headtext">
                   <div className="flex md:m-4">
-                    <p className="nextgen  md:mt-14 md:ml-12">NEXT GEN </p>
+                    <p className="nextgen md:mt-14 md:ml-12">NEXT GEN</p>
                     <svg
                       width="116"
                       height="115"
@@ -39,13 +40,13 @@ function Home() {
                       />
                     </svg>
                   </div>
-                  <p className="nextgen  sw md:ml-16 "> SMART WATCH</p>
+                  <p className="nextgen sw md:ml-16">SMART WATCH</p>
 
-                  <div className="desc1 md:m-2 ">
+                  <div className="desc1 md:m-2">
                     Everyone looks your watch and it represents who you are your
                     values and your personal style.
                   </div>
-                  <div className=" flex md:ml-2 mr-20 mt-9 justify-between">
+                  <div className="flex md:ml-2 mr-20 mt-9 justify-between">
                     <div className="price">$550.00</div>
                     <svg
                       className="flex pricesvg"
@@ -64,12 +65,12 @@ function Home() {
                     </svg>
                   </div>
                 </div>
-                <div className="border-line2  mb-0"></div>
-                <img className="watch1 " src={image1} alt="My Image" />
-                <div className="border-line2-1  mb-0"></div>
+                <div className="border-line2 mb-0"></div>
+                <img className="watch1" src={image1} alt="My Image" />
+                <div className="border-line2-1 mb-0"></div>
               </div>
             </div>
-            
+
             <div className="flex shopnowsvg mt-7 ml-4">
               <div className="shopnow">
                 <svg
@@ -122,12 +123,11 @@ function Home() {
                   stroke-linecap="round"
                 />
               </svg>
-         
             </div>
           </div>
           <div className="md:pb-16">
-            <div className="border-line3 mb-0 "></div>
-            <div className="col2 md:flex ">
+            <div className="border-line3 mb-0"></div>
+            <div className="col2 md:flex">
               <img className="img2" src={image2} alt="Wristwatch2" />
               <div className="mt-3">
                 <svg
@@ -159,18 +159,32 @@ function Home() {
                 </p>
               </div>
               <div className="border-line2  mb-0"></div>
-              <div className="whats ">WHATS TRENDING?<div className="whatssvg m-4"><svg width="155" height="8" viewBox="0 0 155 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M65.9066 0.766163C58.6742 1.02872 51.5268 1.35156 44.5568 1.7045C34.6901 2.20379 24.8272 2.7203 15.0238 3.5381C11.9379 3.79636 8.8041 3.95991 5.73748 4.28272C3.81246 4.48502 1.25991 4.77337 0.924925 4.83362C0.749712 4.86806 0.673273 4.91976 0.648573 4.93697C0.474904 5.05749 0.506592 5.17366 0.604619 5.26405C0.643984 5.30278 0.743527 5.39751 1.01985 5.41043C19.4998 6.29279 38.3966 4.57111 56.8989 4.39033C88.9853 4.08043 122.044 5.31143 153.876 7.99726C154.154 8.01878 154.424 7.91115 154.462 7.75189C154.509 7.59694 154.308 7.44629 154.03 7.42477C122.145 4.73464 89.0316 3.49932 56.8835 3.81353C39.64 3.98139 22.0562 5.4922 4.78886 4.9757C5.1856 4.93265 5.57464 4.8896 5.9297 4.85086C8.98396 4.52804 12.1046 4.3688 15.1782 4.11055C24.9608 3.29274 34.8036 2.77624 44.6572 2.28125C56.8835 1.66145 69.6424 1.12772 82.5016 0.878076C87.1019 0.916814 91.6868 0.955569 96.2716 1.00292C106.19 1.10622 116.155 1.40751 126.05 1.81211C129.03 1.93693 132.009 2.06605 134.988 2.17796C135.976 2.2167 138.523 2.32859 138.879 2.31998C139.319 2.31137 139.403 2.10479 139.411 2.07035C139.434 1.99288 139.419 1.88526 139.203 1.79488C139.18 1.78196 139.041 1.73889 138.732 1.71307C120.74 0.189377 101.528 -0.0645317 82.5171 0.301327C62.4641 0.142071 42.3339 0.0731716 22.3318 0C22.0454 0 21.8116 0.129145 21.8092 0.288401C21.8077 0.447657 22.0385 0.576807 22.3248 0.581111C36.8081 0.632761 51.3646 0.684383 65.9066 0.766163Z" fill="#1A1A1A"/>
-</svg>
-</div></div>
-            
+              <div className="whats ">
+                WHATS TRENDING?
+                <div className="whatssvg m-4">
+                  <svg
+                    width="155"
+                    height="8"
+                    viewBox="0 0 155 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M65.9066 0.766163C58.6742 1.02872 51.5268 1.35156 44.5568 1.7045C34.6901 2.20379 24.8272 2.7203 15.0238 3.5381C11.9379 3.79636 8.8041 3.95991 5.73748 4.28272C3.81246 4.48502 1.25991 4.77337 0.924925 4.83362C0.749712 4.86806 0.673273 4.91976 0.648573 4.93697C0.474904 5.05749 0.506592 5.17366 0.604619 5.26405C0.643984 5.30278 0.743527 5.39751 1.01985 5.41043C19.4998 6.29279 38.3966 4.57111 56.8989 4.39033C88.9853 4.08043 122.044 5.31143 153.876 7.99726C154.154 8.01878 154.424 7.91115 154.462 7.75189C154.509 7.59694 154.308 7.44629 154.03 7.42477C122.145 4.73464 89.0316 3.49932 56.8835 3.81353C39.64 3.98139 22.0562 5.4922 4.78886 4.9757C5.1856 4.93265 5.57464 4.8896 5.9297 4.85086C8.98396 4.52804 12.1046 4.3688 15.1782 4.11055C24.9608 3.29274 34.8036 2.77624 44.6572 2.28125C56.8835 1.66145 69.6424 1.12772 82.5016 0.878076C87.1019 0.916814 91.6868 0.955569 96.2716 1.00292C106.19 1.10622 116.155 1.40751 126.05 1.81211C129.03 1.93693 132.009 2.06605 134.988 2.17796C135.976 2.2167 138.523 2.32859 138.879 2.31998C139.319 2.31137 139.403 2.10479 139.411 2.07035C139.434 1.99288 139.419 1.88526 139.203 1.79488C139.18 1.78196 139.041 1.73889 138.732 1.71307C120.74 0.189377 101.528 -0.0645317 82.5171 0.301327C62.4641 0.142071 42.3339 0.0731716 22.3318 0C22.0454 0 21.8116 0.129145 21.8092 0.288401C21.8077 0.447657 22.0385 0.576807 22.3248 0.581111C36.8081 0.632761 51.3646 0.684383 65.9066 0.766163Z"
+                      fill="#1A1A1A"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
             <div className="border-line4 w-full "></div>
-            </div>
           </div>
-        
+        </div>
       </div>
     </div>
   );
 }
+
 export default Home;
