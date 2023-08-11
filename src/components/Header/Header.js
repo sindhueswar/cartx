@@ -6,14 +6,10 @@ import "./Header.css";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(window.innerWidth >= 769);
   const screen = window.innerWidth >= 769;
-  var li1;
+
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
-  useEffect(() => {
-    if(screen){li1 ={margin: "15% 0 6% 45%"}};
-    console.log(menuOpen);
-  }, [screen]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -67,7 +63,7 @@ function Header() {
                 >
                   <ul className="font-medium  flex   mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
                     
-                    <li className="li1"
+                    <li 
                       style={screen?{margin: "15% 0 6% 55%"}:{margin:"2% 5%"}}
                      >
                       <Link
