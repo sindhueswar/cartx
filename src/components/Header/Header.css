@@ -14,7 +14,7 @@
 
 .cartx {
   font-size: 24px;
-  font-weight:bolder;
+  font-weight: bolder;
   font-family: "LEMON MILK";
 }
 
@@ -55,7 +55,7 @@ ul {
   .border {
     border: none;
   }
- 
+
   .nav-list {
     display: none;
     flex-direction: column;
@@ -69,7 +69,7 @@ ul {
   }
 
   .show {
-    display:flex;
+    display: flex;
     width: 100%;
   }
 
@@ -79,9 +79,9 @@ ul {
   .menu-toggle svg {
     display: block;
   }
-   .menusvg{
+  .menusvg {
     margin: 6%;
-   }
+  }
 
   .show-menu .bar {
     background-color: #fff;
@@ -98,23 +98,24 @@ ul {
   .nav-list li {
     text-align: center;
   }
-  .cartx{
+  .cartx {
     font-size: medium;
   }
-  .cartxlogo{
+  .cartxlogo {
     width: 30%;
     height: 30%;
   }
-  .header-container{
+  .header-container {
     height: 70px;
-    justify-content:space-between;
+    justify-content: space-between;
   }
-  li{
+  li {
     margin: 2%;
   }
-  .divider{
-  display: none;}
-  ul{
+  .divider {
+    display: none;
+  }
+  ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,26 +123,26 @@ ul {
     width: 100%;
     padding: 20%;
   }
-  nav{
+  nav {
     margin: 270% 0% 0% 0%;
-    background-color: #FDF6EB; 
+    background-color: #fdf6eb;
     overflow: hidden;
-    width:100%;
-    padding:0 80%;
+    width: 100%;
+    padding: 0 80%;
 
-    border:  2px solid #000;;
+    border: 2px solid #000;
   }
   .nav-list {
     display: flex;
     flex-direction: column;
 
     background-color: #f9f9f9;
-    
+
     position: absolute;
     top: 128px;
     left: 0;
     width: 80%;
-    z-index: 2; 
+    z-index: 2;
   }
   .menu-toggle {
     display: block;
@@ -150,24 +151,23 @@ ul {
 
   .menu {
     position: relative;
-    z-index: 1; 
-
+    z-index: 1;
   }
-  .menu-page{
+  .menu-page {
     border-bottom: 1px solid black;
   }
-  ul{
+  ul {
     padding: 0%;
     margin: 150% 0% 0% 0%;
   }
 }
 @media screen and (max-width: 769px) {
-  menu{
+  menu {
     margin: 100%;
   }
-  
-  .icon{
-    display:none;
+
+  .icon {
+    display: none;
   }
 }
 
@@ -182,46 +182,29 @@ ul {
   .menu-item-name {
     display: none;
   }
-  .logo{
+  .logo {
     border-right: 1px solid #000;
   }
-  .divider{
+  .divider {
     border-right: 1px solid #000;
   }
-  
-  .li1{
+
+  .li1 {
     margin: "15% 0 6% 45%";
   }
-  .border-line2{
-    display:none;
+  .border-line2 {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  
   .nav-list {
     display: flex;
   }
   .li1 {
     margin: 15% 0 6% 45%;
   }
- 
 }
-a{
-  font-family: 'Nunito Sans';
-} 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
+a {
+  font-family: "Nunito Sans";
+}

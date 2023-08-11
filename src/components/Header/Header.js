@@ -21,7 +21,6 @@ function Header() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
- 
 
   return (
     <div class="header-container">
@@ -62,10 +61,13 @@ function Header() {
                   id="navbar-default"
                 >
                   <ul className="font-medium  flex   mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
-                    
-                    <li 
-                      style={screen?{margin: "15% 0 6% 55%"}:{margin:"2% 5%"}}
-                     >
+                    <li
+                      style={
+                        screen
+                          ? { margin: "15% 0 6% 55%" }
+                          : { margin: "2% 5%" }
+                      }
+                    >
                       <Link
                         to="/"
                         className="block py-2 pl-3 pr-4  md:bg-transparent md:p-0 menu-page"
@@ -80,7 +82,6 @@ function Header() {
                       >
                         AboutUs
                       </Link>
-                 
                     </li>
                     <li style={{ margin: "15% 0 6% 25%" }}>
                       <Link
@@ -90,7 +91,13 @@ function Header() {
                         Support
                       </Link>
                     </li>
-                    <li style={screen?{ margin: "15% 55% 6% 35%" }:{margin:"2% 5%"}}>
+                    <li
+                      style={
+                        screen
+                          ? { margin: "15% 55% 6% 35%" }
+                          : { margin: "2% 5%" }
+                      }
+                    >
                       <Link
                         to="/product"
                         className="block py-2 pl-3 pr-4 md:bg-transparent md:p-0 "
@@ -210,27 +217,27 @@ function Header() {
         </>
       ) : (
         <div className="menusvg">
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="menu-toggle "
-          onClick={handleMenuToggle}
-        >
-          <g clip-path="url(#clip0_0_63)">
-            <path d="M6 8H26" stroke="#323131" stroke-width="3" />
-            <path d="M6 16H26" stroke="#323131" stroke-width="3" />
-            <path d="M6 24H18" stroke="#323131" stroke-width="3" />
-            <path d="M22 24L26 24" stroke="#FF5202" stroke-width="3" />
-          </g>
-          <defs>
-            <clipPath id="clip0_0_63">
-              <rect width="32" height="32" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="menu-toggle "
+            onClick={handleMenuToggle}
+          >
+            <g clip-path="url(#clip0_0_63)">
+              <path d="M6 8H26" stroke="#323131" stroke-width="3" />
+              <path d="M6 16H26" stroke="#323131" stroke-width="3" />
+              <path d="M6 24H18" stroke="#323131" stroke-width="3" />
+              <path d="M22 24L26 24" stroke="#FF5202" stroke-width="3" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_63">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
       )}
     </div>
